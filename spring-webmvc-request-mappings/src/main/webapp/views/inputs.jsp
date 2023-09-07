@@ -44,6 +44,10 @@
 			<c:url value="/inputs/request?p=Jean&w=30&l=30" var="request"></c:url>
 			<a href="${request}">Request Params</a>
 		</li>
+		<li>
+			<c:url value="/" var="home"></c:url>
+			<a href="${home }">Back To Home</a>
+		</li>
 	</ul>
 </body>
 </html>

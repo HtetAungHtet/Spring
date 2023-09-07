@@ -13,11 +13,11 @@ public class Course {
 
 	private int id;
 	private String name;
-	private String level;
+	private Level level;
 	private int duration;
 	private int fees;
 	
-	public Course(String name, String level, int duration, int fees) {
+	public Course(String name, Level level, int duration, int fees) {
 		super();
 		this.name = name;
 		this.level = level;

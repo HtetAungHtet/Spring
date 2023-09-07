@@ -17,7 +17,15 @@
 		<h1>Course List</h1>
 		
 		<div class="mt-4">
+			
+			<div>
+				<c:url value="/course/edit" var="courseEdit"></c:url>
+				<a href="${courseEdit}" class="btn btn-primary mb-4">Add New Course</a>
+			</div>
+			
+		
 			<table class="table">
+			
 				<thead>
 					<tr>
 						<th>Id</th>
@@ -32,7 +40,10 @@
 					<c:forEach var="c" items="${list}">
 						<tr>
 							<td>${c.id}</td>
-							<td>${c.name}</td>
+							<td>
+								<c:url value="/course/${c.id }" var="detailsUrl"></c:url>
+								<a href="${detailsUrl}">${c.name}</a>
+							</td>
 							<td>${c.level}</td>
 							<td>${c.duration}</td>
 							<td>${c.fees}</td>
